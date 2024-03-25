@@ -1,0 +1,21 @@
+{
+    "editor.tabSize": 2,
+    "editor.indentSize": 2,
+    "eslint.validate": [
+        "typescript",
+        "javascript"
+    ],
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "typescript.preferences.importModuleSpecifierEnding": "minimal",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "typescript.suggest.paths": false,
+    "javascript.suggest.paths": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}
