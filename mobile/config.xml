@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pushmax.FoodBudget" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Food Budget</name>
+    <description>A simple multi platform app for food calories counting and budgeting</description>
+    <author email="pushmaxcy@gmail.com" href="mailto:pushmaxcy@gmail.com">
+        Maksim Pushkin
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>

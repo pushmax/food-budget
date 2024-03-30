@@ -1,0 +1,24 @@
+{
+  "name": "food-budget",
+  "displayName": "Food Budget",
+  "version": "1.0.0",
+  "description": "A simple multi platform app for food calories counting and budgeting",
+  "main": "index.js",
+  "scripts": {
+    "check:requirements": "cordova requirements",
+    "build:android": "cordova build android"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Maksim Pushkin",
+  "license": "GPL-3.0-only",
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "devDependencies": {
+    "cordova-android": "^12.0.1"
+  }
+}

@@ -1,11 +1,22 @@
 {
   "name": "food-budget",
   "version": "1.0.0",
-  "description": "Food budget app",
+  "description": "A simple multi platform app for food calories counting and budgeting",
   "main": "index.jsx",
   "scripts": {
-    "build:dev": "webpack --config webpack-dev.config.js",
-    "start": "webpack serve --open --config webpack-dev.config.js"
+    "bundle:web:dev": "webpack --config webpack/webpack-dev.config.js",
+    "bundle:mobile": "webpack --config webpack/webpack-mobile.config.js",
+
+    "check:mobile:requirements": "cd mobile && cordova requirements",
+
+    "android:init": "cd mobile && cordova platform add android",
+    "android:build": "npm run bundle:mobile && cd mobile && cordova build android",
+    "android:emulator": "cd mobile && cordova emulate android",
+    "android:device": "cd mobile && cordova run android",
+    "android:start:emulator": "npm run android:build && npm run android:emulator",
+    "android:start:device": "npm run android:build && npm run android:device",
+
+    "start:web": "webpack serve --open --config webpack/webpack-dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +44,7 @@
     "@types/react": "^18.2.70",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/parser": "^7.3.1",
+    "cordova": "^12.0.0",
     "css-loader": "^6.10.0",
     "eslint": "^8.57.0",
     "eslint-plugin-simple-import-sort": "^12.0.0",
