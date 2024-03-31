@@ -1,7 +1,7 @@
+import { App } from '@pages/app/app';
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { App } from './components/app';
 
 function createRootContainer(): HTMLElement {
   const rootNode = document.createElement('div');

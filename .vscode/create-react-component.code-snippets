@@ -1,0 +1,17 @@
+{
+	"Create React compoent": {
+		"scope": "typescriptreact",
+		"prefix": "react-component-create",
+		"body": [
+			"import React from 'react';",
+			"",
+			"",
+			"export default function $1(): React.JSX.Element {",
+			"  return (",
+			"    <></>",
+			"  );",
+			"}"
+		],
+		"description": "Creates a new React component"
+	}
+}

@@ -1,6 +1,7 @@
 {
     "extends": [
-        "eslint:recommended"
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     "env": {
         "node": true
@@ -12,11 +13,16 @@
     },
     "plugins": [
         "simple-import-sort",
-        // https://eslint.style/packages/default - take a look for more rules
-        "@stylistic"
+        // Take a look here for more rules: https://eslint.style/packages/default
+        "@stylistic",
+        // Take a look here for more rules: https://typescript-eslint.io/rules/
+        "@typescript-eslint"
     ],
     "rules": {
         "simple-import-sort/imports": "error",
+        "@typescript-eslint/consistent-type-imports": "error",
+        "@stylistic/semi": "error",
+        "@stylistic/quotes": ["error", "single"],
         "@stylistic/indent": ["error", 2],
         "@stylistic/max-len": ["error", 130],
         "@stylistic/array-bracket-spacing": ["error", "always"],

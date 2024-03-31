@@ -1,5 +1,7 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const path = require('path');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -15,17 +17,21 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          "style-loader",
+          'style-loader',
           // Translates CSS into CommonJS
-          "css-loader",
+          'css-loader',
           // Compiles Sass to CSS
-          "sass-loader",
+          'sass-loader',
         ],
       },
     ]
   },
   resolve: {
-    extensions: [ '.ts', '.tsx', '.js' ]
+    extensions: [ '.ts', '.tsx', '.js' ],
+    alias: {
+      '@shared': path.resolve(__dirname, '../src/shared/'),
+      '@pages': path.resolve(__dirname, '../src/pages/'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({

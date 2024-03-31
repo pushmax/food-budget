@@ -8,8 +8,13 @@
         "forceConsistentCasingInFileNames": true,
         "module": "ES6",
         "outDir": "./dist",
-        "strict": true
-    },
+        "strict": true,
+        "moduleResolution": "Bundler",
+        "paths": {
+            "@shared/*": ["./src/shared/*"],
+            "@pages/*": ["./src/pages/*"]
+        }
+},
     "exclude": [
         "dist/**/*",
         "node_modules/**/*"
